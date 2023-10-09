@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport d'incidents</title>
+    <link rel="stylesheet" href="user_interface.css">
+    <script type="text/javascript" src="user_interface.js"></script>
+</head>
+<body>
+    <h1>Rapport d'incidents</h1>
+    <form id="form" onsubmit="getReport()" target="_blank">
+        <div class="container">
+            <label for="id_vehicle">Identifiant du véhicule :</label>
+            <input type="text" id="id_vehicle" pattern="\d+" placeholder="Entrez l'identifiant" required/>
+        </div>
+        <input type="submit" id="submit" value="Générer le PDF">
+    </form>
+</body>
+</html>
